@@ -50,6 +50,7 @@ class WidgetsBasicos extends StatelessWidget {
           ),
           TextField(
             decoration: InputDecoration(
+              fillColor: Colors.greenAccent,
               border: OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.greenAccent, width: 3.0),
                 borderRadius: new BorderRadius.circular(25.0),
@@ -87,6 +88,15 @@ class WidgetsBasicos extends StatelessWidget {
               ),
             ),
           ),
+          ElevatedButton(
+            style: const ButtonStyle(
+              backgroundColor: MaterialStatePropertyAll<Color>(Colors.green),
+            ),
+            child: const Text('Avançar'),
+            onPressed: () {
+              // ...
+            },
+          )
         ],
       ),
     );
