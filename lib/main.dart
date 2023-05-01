@@ -60,6 +60,19 @@ class WidgetsBasicos extends StatelessWidget {
                 style: GoogleFonts.getFont('Montserrat', fontSize: 20.0),
               ),
               textFieldCategoria(),
+              TextButton(
+                child: Text('Cadastrar'),
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.green[800],
+                  textStyle: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
+                ),
+                onPressed: () {
+                  print('Cadastrado');
+                },
+              )
             ]),
       ),
     );
